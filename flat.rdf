@@ -1,0 +1,1805 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.indiaproperty.com//"
+     xml:base="http://www.indiaproperty.com//"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="http://www.indiaproperty.com/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.indiaproperty.com/">
+        <rdfs:comment>In this Ontology, we will see ontology on different types of flats in India</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.indiaproperty.com/buy -->
+
+    <owl:ObjectProperty rdf:about="http://www.indiaproperty.com/buy">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Customer"/>
+        <rdfs:range rdf:resource="http://www.indiaproperty.com/Flat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/enquire_about -->
+
+    <owl:ObjectProperty rdf:about="http://www.indiaproperty.com/enquire_about">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Customer"/>
+        <rdfs:range rdf:resource="http://www.indiaproperty.com/Flat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/has_amenities -->
+
+    <owl:ObjectProperty rdf:about="http://www.indiaproperty.com/has_amenities">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Society"/>
+        <rdfs:range rdf:resource="http://www.indiaproperty.com/Amenities"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/has_flat -->
+
+    <owl:ObjectProperty rdf:about="http://www.indiaproperty.com/has_flat">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Society"/>
+        <rdfs:range rdf:resource="http://www.indiaproperty.com/Flat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/has_flat_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.indiaproperty.com/has_flat_type">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdfs:range rdf:resource="http://www.indiaproperty.com/Flat_Furnished_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/has_society_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.indiaproperty.com/has_society_type">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Society"/>
+        <rdfs:range rdf:resource="http://www.indiaproperty.com/Society_ConstructionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/has_villa -->
+
+    <owl:ObjectProperty rdf:about="http://www.indiaproperty.com/has_villa">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Society"/>
+        <rdfs:range rdf:resource="http://www.indiaproperty.com/Villa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/have_society -->
+
+    <owl:ObjectProperty rdf:about="http://www.indiaproperty.com/have_society">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Company"/>
+        <rdfs:range rdf:resource="http://www.indiaproperty.com/Society"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/helped -->
+
+    <owl:ObjectProperty rdf:about="http://www.indiaproperty.com/helped">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Agent"/>
+        <rdfs:range rdf:resource="http://www.indiaproperty.com/Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/is_located_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.indiaproperty.com/is_located_in">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Society"/>
+        <rdfs:range rdf:resource="http://www.indiaproperty.com/Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/visit -->
+
+    <owl:ObjectProperty rdf:about="http://www.indiaproperty.com/visit">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Customer"/>
+        <rdfs:range rdf:resource="http://www.indiaproperty.com/Society"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.indiaproperty.com/Address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.indiaproperty.com/Address">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/Area_per_square_Feet -->
+
+    <owl:DatatypeProperty rdf:about="http://www.indiaproperty.com/Area_per_square_Feet">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.indiaproperty.com/ID">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/MobileNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.indiaproperty.com/MobileNo">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.indiaproperty.com/Name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.indiaproperty.com/Company"/>
+                    <rdf:Description rdf:about="http://www.indiaproperty.com/Location"/>
+                    <rdf:Description rdf:about="http://www.indiaproperty.com/Person"/>
+                    <rdf:Description rdf:about="http://www.indiaproperty.com/Society"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/No._of_Balcony -->
+
+    <owl:DatatypeProperty rdf:about="http://www.indiaproperty.com/No._of_Balcony">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/No._of_Bathroom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.indiaproperty.com/No._of_Bathroom">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/No._of_Room -->
+
+    <owl:DatatypeProperty rdf:about="http://www.indiaproperty.com/No._of_Room">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/Price_per_square_feet -->
+
+    <owl:DatatypeProperty rdf:about="http://www.indiaproperty.com/Price_per_square_feet">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.indiaproperty.com/Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.indiaproperty.com/Type">
+        <rdfs:domain rdf:resource="http://www.indiaproperty.com/Society_ConstructionType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.indiaproperty.com/Agent -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Agent">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Amenities -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Amenities">
+        <rdfs:comment>Facilities provided by society</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Basketball -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Basketball">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Playground"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/CCTV -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/CCTV">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Amenities"/>
+        <rdfs:comment>CCTV is one of the most important facility provided by any society for the safety of their residents and their known people.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Club_House -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Club_House">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Amenities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Company -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Company">
+        <rdfs:comment>Here, Company refers to the builder who is responsible for construction of society and flats.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Cricket_Playground -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Cricket_Playground">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Playground"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Customer -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Customer">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Flat"/>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat_Furnished_Type -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Flat_Furnished_Type"/>
+    
+
+
+    <!-- http://www.indiaproperty.com/Furnished -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Furnished">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Flat_Furnished_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Gym -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Gym">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Amenities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/In_Construction -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/In_Construction">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Society_ConstructionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Kids_Playground -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Kids_Playground">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Playground"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Location"/>
+    
+
+
+    <!-- http://www.indiaproperty.com/Parking -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Parking">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Amenities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Person -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Person">
+        <owl:disjointWith rdf:resource="http://www.indiaproperty.com/Society"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Playground -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Playground">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Amenities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Ready_To_Move -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Ready_To_Move">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Society_ConstructionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Resident_Parking -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Resident_Parking">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Parking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Security -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Security">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Amenities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Semi-Furnished -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Semi-Furnished">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Flat_Furnished_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Shopping_Complex -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Shopping_Complex">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Amenities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Society"/>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society_ConstructionType -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Society_ConstructionType"/>
+    
+
+
+    <!-- http://www.indiaproperty.com/Swimming_Pool -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Swimming_Pool">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Amenities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Un-Furnished -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Un-Furnished">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Flat_Furnished_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Villa -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Villa">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Flat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/Visitor_Parking -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/Visitor_Parking">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Parking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/1BHK -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/1BHK">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Flat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/2BHK -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/2BHK">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Flat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/3BHK -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/3BHK">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Flat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.indiaproperty.com/4BHK -->
+
+    <owl:Class rdf:about="http://www.indiaproperty.com/4BHK">
+        <rdfs:subClassOf rdf:resource="http://www.indiaproperty.com/Flat"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.indiaproperty.com/Agent1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Agent1">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Agent"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Person"/>
+        <www:helped rdf:resource="http://www.indiaproperty.com/Customer3"/>
+        <www:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1005</www:ID>
+        <www:Name>Ajeet</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Agent2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Agent2">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Agent"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Person"/>
+        <www:helped rdf:resource="http://www.indiaproperty.com/Customer1"/>
+        <www:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1010</www:ID>
+        <www:Name>Gaurav</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Agent3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Agent3">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Agent"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Person"/>
+        <www:helped rdf:resource="http://www.indiaproperty.com/Customer5"/>
+        <www:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1111</www:ID>
+        <www:Name>Stevan</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Agent4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Agent4">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Agent"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Person"/>
+        <www:helped rdf:resource="http://www.indiaproperty.com/Customer4"/>
+        <www:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1212</www:ID>
+        <www:Name>Rema</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Agent5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Agent5">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Agent"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Person"/>
+        <www:helped rdf:resource="http://www.indiaproperty.com/Customer2"/>
+        <www:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1001</www:ID>
+        <www:Name>Selena</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Agent6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Agent6">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Agent"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Person"/>
+        <www:helped rdf:resource="http://www.indiaproperty.com/Customer5"/>
+        <www:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1020</www:ID>
+        <www:Name>Ranjan</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Amenities1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Amenities1">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Amenities"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Company1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Company1">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Company"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society7"/>
+        <www:Name>DLF Limited</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Company10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Company10">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Company"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society11"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society12"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society15"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society2"/>
+        <www:Name>ATS</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Company2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Company2">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Company"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society8"/>
+        <www:Name>Raheja Developer</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Company3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Company3">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Company"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society6"/>
+        <www:Name>Gaur</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Company4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Company4">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Company"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society3"/>
+        <www:Name>Godrej Developers</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Company5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Company5">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Company"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society13"/>
+        <www:Name>Supertech Developers</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Company6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Company6">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Company"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society14"/>
+        <www:Name>KW Group</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Company7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Company7">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Company"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society9"/>
+        <www:Name>Parsvnath Developers</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Company8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Company8">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Company"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society1"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society10"/>
+        <www:Name>Prateek</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Company9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Company9">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Company"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society4"/>
+        <www:have_society rdf:resource="http://www.indiaproperty.com/Society5"/>
+        <www:Name>Apex</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Customer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Customer1">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Customer"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Person"/>
+        <www:buy rdf:resource="http://www.indiaproperty.com/Flat3"/>
+        <www:enquire_about rdf:resource="http://www.indiaproperty.com/Flat7"/>
+        <www:visit rdf:resource="http://www.indiaproperty.com/Society4"/>
+        <www:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5111</www:ID>
+        <www:Name>Jennifer</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Customer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Customer2">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Customer"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Person"/>
+        <www:buy rdf:resource="http://www.indiaproperty.com/Flat5"/>
+        <www:enquire_about rdf:resource="http://www.indiaproperty.com/Flat5"/>
+        <www:visit rdf:resource="http://www.indiaproperty.com/Society3"/>
+        <www:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5121</www:ID>
+        <www:Name>Shivani</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Customer3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Customer3">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Customer"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Person"/>
+        <www:buy rdf:resource="http://www.indiaproperty.com/Flat14"/>
+        <www:enquire_about rdf:resource="http://www.indiaproperty.com/Flat11"/>
+        <www:visit rdf:resource="http://www.indiaproperty.com/Society6"/>
+        <www:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5123</www:ID>
+        <www:Name>Marie</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Customer4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Customer4">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Customer"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Person"/>
+        <www:buy rdf:resource="http://www.indiaproperty.com/Flat19"/>
+        <www:enquire_about rdf:resource="http://www.indiaproperty.com/Flat18"/>
+        <www:visit rdf:resource="http://www.indiaproperty.com/Society9"/>
+        <www:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51432</www:ID>
+        <www:Name>John</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Customer5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Customer5">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Customer"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Person"/>
+        <www:buy rdf:resource="http://www.indiaproperty.com/Flat18"/>
+        <www:enquire_about rdf:resource="http://www.indiaproperty.com/Flat19"/>
+        <www:visit rdf:resource="http://www.indiaproperty.com/Society11"/>
+        <www:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5165</www:ID>
+        <www:Name>Ranjeet</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat1">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/1BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type1"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">770</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5500</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat10">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1550</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6600</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat11">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type3"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">900</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5700</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat12">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1108</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:No._of_Room rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Room>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8970</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat13">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type1"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1639</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8800</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat14">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type3"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1960</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6500</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat15">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/4BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type3"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2400</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7809</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat16">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1270</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6700</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat17">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1698</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7610</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat18">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/4BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1830</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8900</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat19">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type3"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">890</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6650</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat2">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/4BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1570</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7600</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat20">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type3"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1385</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6600</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat21">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1732</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat22">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2280</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11500</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat23">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type1"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1410</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8900</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat24">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2115</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8700</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat25">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type3"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1380</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7690</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat26">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/4BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type3"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3390</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7899</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat27">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1700</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6700</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat28">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2040</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7500</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat29 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat29">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/4BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type3"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2555</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7800</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat3">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type1"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1700</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4500</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat30">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type1"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1625</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8923</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat31 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat31">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type1"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1100</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7942</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat32 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat32">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">900</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7983</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat33 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat33">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type1"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">720</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9326</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat34 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat34">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type1"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2356</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11000</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat35 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat35">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type1"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1370</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat36 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat36">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type3"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1150</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6570</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat37 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat37">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1082</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7680</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat38 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat38">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1505</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5679</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat39 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat39">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type3"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1945</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6780</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat4">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type3"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">970</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5600</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat40 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat40">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/2BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type1"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">880</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8900</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat5">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1380</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7500</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat6">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1795</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7700</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat7">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/3BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type1"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1800</www:Area_per_square_Feet>
+        <www:Name>Sector 1, Greater Noida West</www:Name>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6500</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat8">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/4BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type2"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2400</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6700</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat9">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/1BHK"/>
+        <www:has_flat_type rdf:resource="http://www.indiaproperty.com/Flat_Type1"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">706</www:Area_per_square_Feet>
+        <www:No._of_Balcony rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</www:No._of_Balcony>
+        <www:No._of_Bathroom rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</www:No._of_Bathroom>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7800</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat_Type1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat_Type1">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat_Furnished_Type"/>
+        <www:Type>Furnished</www:Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat_Type2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat_Type2">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat_Furnished_Type"/>
+        <www:Type>Semi-Furnished</www:Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Flat_Type3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Flat_Type3">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat_Furnished_Type"/>
+        <www:Type>Un-Furnished</www:Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location1">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Siddharth Vihar, Ghaziabad</www:Address>
+        <www:Name>Uttar Pradesh</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location10">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Siddharth Vihar</www:Address>
+        <www:Name>Uttar Pradesh</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location11">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Greater Noida</www:Address>
+        <www:Name>Uttar Pradesh</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location12">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Moti Nagar</www:Address>
+        <www:Name>Delhi</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location13">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Sector - 11,14, Sohna Road, Gurugram</www:Address>
+        <www:Name>Haryana</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location14">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Opp. Golf Course,
+Main Sector Road, Sector 53, Gurugram</www:Address>
+        <www:Name>Haryana</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location15">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Kamalammal Garden Ext 1</www:Address>
+        <www:Name>Chennai</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location2">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Sec 150 noida</www:Address>
+        <www:Name>Uttar Pradesh</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location3">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Plot No.16, ATS Tower, Sector 135, Noida</www:Address>
+        <www:Name>Uttar Pradesh</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location4">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Powai</www:Address>
+        <www:Name>Mumbai</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location5">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Sector 74, Noida</www:Address>
+        <www:Name>Uttar Pradesh</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location6">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Karol Bagh</www:Address>
+        <www:Name>Delhi</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location7">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Sector 1, Greater Noida West</www:Address>
+        <www:Name>Uttar Pradesh</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location8">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Hoodi, Bangalore</www:Address>
+        <www:Name>Karnataka</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Location9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Location9">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Location"/>
+        <www:Address>Siddharth Vihar, Ghaziabad</www:Address>
+        <www:Name>Uttar Pradesh</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society1">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat4"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat5"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat6"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type2"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location1"/>
+        <www:Name>Prateek Grand City</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society10">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat27"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat28"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat29"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type1"/>
+        <www:has_villa rdf:resource="http://www.indiaproperty.com/Villa1"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location2"/>
+        <www:Name>Prateek Canary</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society11">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat30"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat31"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat32"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat33"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type1"/>
+        <www:has_villa rdf:resource="http://www.indiaproperty.com/Villa2"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location3"/>
+        <www:Name>ATS Homekraft</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society12">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat2"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat34"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat35"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type1"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location4"/>
+        <www:Name>ATS Powai</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society13">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat36"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat37"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat38"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat39"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type2"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location5"/>
+        <www:Name>Supertech Capetown</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society14">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat40"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type2"/>
+        <www:has_villa rdf:resource="http://www.indiaproperty.com/Villa3"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location6"/>
+        <www:Name>KW Blue Pearl</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society15">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat3"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type2"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location15"/>
+        <www:Name>Ats Pattammal Garden</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society2">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat7"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat8"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type2"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location7"/>
+        <www:Name>ATS Green Rhapsody</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society3">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat12"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat13"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat9"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type1"/>
+        <www:has_villa rdf:resource="http://www.indiaproperty.com/Villa4"/>
+        <www:has_villa rdf:resource="http://www.indiaproperty.com/Villa5"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location8"/>
+        <www:Name>Godrej Air</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society4">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat14"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat15"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type1"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location9"/>
+        <www:Name>APEX QUEBEC</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society5">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat16"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat17"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat18"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type2"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location10"/>
+        <www:Name>APEX THE KREMLIN</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society6">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat19"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat20"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type2"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location11"/>
+        <www:Name>Gaur City 16th Avenue</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society7">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_amenities rdf:resource="http://www.indiaproperty.com/Amenities1"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat21"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat22"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type2"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location12"/>
+        <www:Name>DLF One Midtown</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society8">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat23"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat24"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type2"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location13"/>
+        <www:Name>Raheja Aranya City</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society9">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat25"/>
+        <www:has_flat rdf:resource="http://www.indiaproperty.com/Flat26"/>
+        <www:has_society_type rdf:resource="http://www.indiaproperty.com/Society_Type2"/>
+        <www:is_located_in rdf:resource="http://www.indiaproperty.com/Location14"/>
+        <www:Name>Parsvnath Exotica</www:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society_Type1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society_Type1">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society_ConstructionType"/>
+        <www:Type>In-Construction</www:Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Society_Type2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Society_Type2">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Society_ConstructionType"/>
+        <www:Type>Ready To Move</www:Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Villa1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Villa1">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Villa"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">360</www:Area_per_square_Feet>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Villa2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Villa2">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Villa"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22500</www:Area_per_square_Feet>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11000</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Villa3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Villa3">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Villa"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4000</www:Area_per_square_Feet>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8500</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Villa4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Villa4">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Villa"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6700</www:Area_per_square_Feet>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8900</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.indiaproperty.com/Villa5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.indiaproperty.com/Villa5">
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Flat"/>
+        <rdf:type rdf:resource="http://www.indiaproperty.com/Villa"/>
+        <www:Area_per_square_Feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6700</www:Area_per_square_Feet>
+        <www:Price_per_square_feet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9900</www:Price_per_square_feet>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
